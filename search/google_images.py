@@ -49,7 +49,12 @@ def get_image_urls(engine_id, api_key, keywords, exclusions=[], prefix=None, max
                 img_count = count_diff
 
             response = cse.list(q=keyword_str, excludeTerms=exclude_str, cx=engine_id, searchType="image", start=page_index, num=img_count).execute()
-            items = response["items"]
+            items = response.get("items")
+
+            if items is None:
+                print(response)
+                break
+            
             image_urls = image_urls + _parse_items(items)
             
             url_count += len(items)
