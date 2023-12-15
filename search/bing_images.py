@@ -1,5 +1,5 @@
 from time import sleep
-from common_image_tools.queries import to_query_str
+from queries import to_query_str
 import requests
 
 def get_image_urls(subscription_key, keywords, exclusions=[], prefix=None, max_images=50):
