@@ -7,6 +7,6 @@ include = ["download", "search"]
 
 [project]
 name = "image_search_tools"
-version = "0.2"
+version = "0.21"
 dependencies = ["fastbook", "jmd_imagescraper", "google-api-python-client"]
 
