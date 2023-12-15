@@ -10,4 +10,3 @@ def to_query_str(keywords, exclusions=[], prefix=None):
         query_str = f'{query_str} {exclude_str}'
     
     return query_str
-        
