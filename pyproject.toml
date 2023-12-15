@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["download", "search"]
+
+[project]
+name = "image_search_tools"
+version = "0.1"
+dependencies = ["fastbook", "jmd_imagescraper", "google-api-python-client"]
+
